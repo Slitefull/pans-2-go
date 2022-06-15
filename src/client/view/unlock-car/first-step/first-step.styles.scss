@@ -1,0 +1,54 @@
+@use "src/ui-kit/styles" as *;
+
+.first-step {
+  display: flex;
+  flex-direction: column;
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 28px;
+
+    @include mobile {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__section__unlock {
+      .section-title {
+        color: #333;
+        font-size: 12px;
+        line-height: 150%;
+        margin: 0 0 20px;
+
+        @include mobile {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+      padding: 6px;
+      text-transform: uppercase;
+      width: calc(50% - 5px);
+
+      @include mobile {
+        padding: 13px;
+      }
+    }
+  }
+}

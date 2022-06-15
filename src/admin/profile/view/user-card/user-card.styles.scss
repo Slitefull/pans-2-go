@@ -1,0 +1,29 @@
+@use "../../../../ui-kit/styles/index" as *;
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  height: fit-content;
+
+  &__name {
+    color: #333;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__text {
+    color: #333;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 12px 0 0;
+  }
+}

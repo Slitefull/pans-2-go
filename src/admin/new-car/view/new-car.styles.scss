@@ -1,0 +1,271 @@
+.new-car {
+  display: grid;
+  grid-template-columns: 0.55fr 1.45fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 15px 30px;
+  grid-auto-flow: row dense;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "new-car__card new-car__form";
+
+  &__card {
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    grid-area: new-car__card;
+    height: fit-content;
+
+    &__header {
+      margin: 0 0 10px;
+
+      .text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333333;
+      }
+    }
+
+    &__device-key {
+      margin: 20px 0 0;
+
+      .title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333333;
+        margin: 0 0 10px;
+      }
+
+      .text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #333333;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    grid-area: new-car__form;
+
+    .section-title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0 0 15px;
+      color: #333333;
+    }
+
+    .title-icon {
+      margin-right: 10px;
+    }
+
+    .general-info {
+      margin: 0 0 20px;
+
+      .container-first {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 10px;
+        grid-auto-flow: row dense;
+        grid-template-areas: "car-title plate-number vin";
+        margin: 0 0 20px;
+
+        .car-title {
+          width: 100%;
+          grid-area: car-title;
+        }
+
+        .plate-number {
+          width: 100%;
+          grid-area: plate-number;
+        }
+
+        .vin {
+          width: 100%;
+          grid-area: vin;
+        }
+      }
+    }
+
+    .specification {
+      margin: 0 0 20px;
+
+      .container-first {
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 10px;
+        grid-template-areas: "model year";
+        margin: 0 0 10px;
+
+        .make {
+          width: 100%;
+          grid-area: make;
+        }
+
+        .body-type {
+          width: 100%;
+          grid-area: body-type;
+        }
+
+        .fuel-type {
+          width: 100%;
+          grid-area: fuel-type;
+        }
+
+        .transmission {
+          width: 100%;
+          grid-area: transmission;
+        }
+      }
+
+      .container-second {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 10px;
+        grid-auto-flow: row dense;
+        grid-template-areas: "model year";
+        margin: 0 0 10px;
+
+        .model {
+          width: 100%;
+          grid-area: model;
+        }
+
+        .year {
+          width: 100%;
+          grid-area: year;
+        }
+      }
+
+      .container-third {
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 10px;
+        grid-template-areas: "doors seats color";
+        margin: 0 0 10px;
+
+        .doors {
+          width: 100%;
+          grid-area: doors;
+        }
+
+        .seats {
+          width: 100%;
+          grid-area: seats;
+        }
+
+        .color {
+          width: 100%;
+          grid-area: color;
+        }
+      }
+    }
+
+    .insurance {
+      margin: 0 0 20px;
+
+      .container-first {
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 10px;
+        grid-template-areas: "coverage policy-numbers exp-date";
+
+        .coverage {
+          width: 100%;
+          grid-area: coverage;
+        }
+
+        .policy-numbers {
+          width: 100%;
+          grid-area: policy-numbers;
+        }
+
+        .exp-date {
+          width: 100%;
+          grid-area: exp-date;
+        }
+      }
+    }
+
+    .registration {
+      margin: 0 0 20px;
+
+      .container-first {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 10px;
+        grid-auto-flow: row dense;
+        grid-template-areas: "state exp-date .";
+
+        .new-car-state {
+          width: 100%;
+          grid-area: state;
+        }
+
+        .exp-date {
+          width: 100%;
+          grid-area: exp-date;
+        }
+      }
+    }
+
+    .service-inspection {
+      margin: 0 0 20px;
+
+      .container-first {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 10px;
+        grid-auto-flow: row dense;
+        grid-template-areas: "last-inspection-date exp-date";
+      }
+
+      .last-inspection-date {
+        width: 100%;
+        grid-area: last-inspection-date;
+      }
+
+      .exp-date {
+        width: 100%;
+        grid-area: exp-date;
+      }
+    }
+  }
+}
+
+.buttons-wrapper {
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,9 @@
+@use 'src/ui-kit/styles' as *;
+
+.inputLabel {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #333333;
+  margin-bottom: 7px;
+}

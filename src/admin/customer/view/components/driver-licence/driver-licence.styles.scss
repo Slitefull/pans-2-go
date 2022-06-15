@@ -1,0 +1,60 @@
+.driver-licence {
+  margin: 30px 0 0 0;
+  width: 60%;
+
+  .licences-preview {
+    max-height: 110px;
+
+    &__image {
+      height: 100px !important;
+    }
+  }
+
+  .driver-licence-container {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 20px;
+    grid-template-areas:
+    "licence-uploader licence-uploader licence-uploader"
+    "dob issue-date exp-date"
+    "licence-number licence-number licence-number";
+    justify-items: stretch;
+    align-items: stretch;
+
+    .licence-uploader {
+      grid-area: licence-uploader;
+      margin: 0 0 30px;
+
+      .ui-kit-uploader--image {
+        border-radius: 12px;
+        height: 140px;
+      }
+
+      &__input {
+        height: 150px;
+      }
+    }
+
+    .dob {
+      grid-area: dob;
+    }
+
+    .issue-date {
+      grid-area: issue-date;
+    }
+
+    .exp-date {
+      grid-area: exp-date;
+    }
+
+    .licence-number {
+      grid-area: licence-number;
+
+      .personal-details-form__input {
+        max-width: 100%;
+      }
+    }
+  }
+}

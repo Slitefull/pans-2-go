@@ -1,0 +1,72 @@
+@use "src/ui-kit/styles" as *;
+
+.second-step {
+  .content {
+    color: #333;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0 0 12px;
+  }
+
+  .payment-method-section {
+    display: flex;
+    flex-direction: column;
+    margin: 48px 0;
+
+    @include mobile {
+      margin: 20px 0;
+    }
+
+    .bullets-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .bullet {
+      box-sizing: border-box;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 150%;
+      margin-right: 12px;
+      padding: 9px 15px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    button {
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
+  .total-price {
+    color: #333;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 12px 0 0;
+  }
+  .border-for-table {
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 10px;
+  }
+
+  .scrollable-table {
+    .body .table-row {
+      padding: 5px 15px;
+    }
+  }
+}

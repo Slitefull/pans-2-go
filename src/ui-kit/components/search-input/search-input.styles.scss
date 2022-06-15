@@ -1,0 +1,86 @@
+@use 'src/ui-kit/styles' as *;
+
+$top: calc(100% + 30px);
+$topActive: calc(100% + 10px);
+$animationTiming: 75ms;
+
+.searchInput {
+  position: relative;
+}
+
+.searchInput__input {
+
+}
+
+.searchInput__options {
+  opacity: 0;
+  top: $top;
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 1px;
+  border-radius: 10px;
+  overflow: hidden;
+  //max-height: 200px;
+  overflow-y: auto;
+  z-index: 99;
+  padding: 0 0 5px;
+  list-style: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.104506);
+}
+
+.searchInput__options_enter {
+  display: block;
+}
+
+.searchInput__options_enterActive {
+  opacity: 1;
+  top: $topActive;
+  transition: opacity $animationTiming linear, top $animationTiming ease-out;
+}
+
+.searchInput__options_enterDone {
+  display: block;
+  opacity: 1;
+  top: $topActive;
+}
+
+.searchInput__options_exit {
+  opacity: 1;
+  top: $topActive;
+  display: block;
+}
+
+.searchInput__options_exitActive {
+  display: block;
+  opacity: 0;
+  top: $topActive;
+  transition: opacity $animationTiming linear;
+}
+
+.searchInput__option {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-background;
+  }
+}
+
+.searchInput__option_active {
+  font-weight: bold;
+  background-color: $secondary-background;
+}
+
+.searchInput__option_loading {
+  font-weight: 700;
+  cursor: default;
+
+  &:hover {
+    background-color: white;
+  }
+}

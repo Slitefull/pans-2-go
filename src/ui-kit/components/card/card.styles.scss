@@ -1,0 +1,30 @@
+@use 'src/ui-kit/styles' as *;
+
+.ui-card-input {
+  @include text-paragraph;
+  background: $bg-white;
+  border: 1px solid $stroke;
+  border-radius: $border-radius;
+  height: 40px;
+  padding: 10px 15px;
+  outline: none;
+
+  &--info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+
+    &--digits {
+      display: flex;
+      align-items: center;
+    }
+
+    &--btn {
+      color: #0186e6;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

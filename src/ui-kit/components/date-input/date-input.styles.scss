@@ -1,0 +1,21 @@
+@use 'src/ui-kit/components/text-input/text-input.styles';
+
+.dateInput {
+
+}
+
+.dateInput__day {
+  width: 69px;
+  margin-right: 30px;
+}
+
+.dateInput__month,
+.dateInput__year {
+  width: 100px;
+  margin-right: 30px;
+}
+
+.dateInput__error {
+  @extend .ui-text-input__helper;
+  @extend .ui-text-input__helper--error;
+}

@@ -1,0 +1,146 @@
+$base-link-color: coral;
+$main-yellow-gradient: linear-gradient(45.53deg, #f0b90d 0%, #f9d333 99.09%);
+$main-black: #333333;
+$main-white: #ffffff;
+$main-yellow: #f0b90d;
+$main-red: #dd1e1e;
+$main-green: rgba(56, 142, 60, 1);
+
+$secondary-background: rgba(246, 244, 237, 1);
+$secondary-color: rgba(134, 145, 153, 1);
+
+$commercial-background: #f5c621;
+
+$delimiter-color: rgba(30, 34, 38, 0.07);
+$link-color: rgba(24, 94, 191, 1);
+
+$facebook-color: rgba(66, 103, 178, 1);
+$twitter-color: rgba(29, 161, 242, 1);
+$linked-in-color: rgba(0, 118, 181, 1);
+
+$main-font: "Poppins", sans-serif;
+$secondary-font: "Inter", sans-serif;
+
+$accent-orange: #f6a444;
+$accent-yellow: #f7ca16;
+
+$message-info: #0186e6;
+$message-success: #198759;
+$message-danger: #eb5757;
+$message-warning: #f6a444;
+
+$text-primary-heading: #333333;
+$text-secondary-heading-primary-paragraph: #4b4950;
+$text-secondary-paragraph: #787580;
+$text-placeholder: #919191;
+
+$bg-tag: #f1f2f8;
+$bg-grey: #fcfcfd;
+$bg-white: #ffffff;
+
+$stroke: #e0e0e0;
+
+$desktop: 1366px;
+$tablet: 768px;
+
+$border-radius: 12px;
+
+@mixin text-heading-h1 {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  color: $text-primary-heading;
+}
+
+@mixin text-heading-h2 {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: $text-primary-heading;
+}
+
+.text-heading-h2 {
+  @include text-heading-h2;
+}
+
+@mixin text-heading-h3 {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $text-primary-heading;
+}
+
+@mixin text-heading-h4 {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-primary-heading;
+}
+
+@mixin text-heading-h5 {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-primary-heading;
+}
+
+.text-heading-h5 {
+  @include text-heading-h5;
+}
+
+@mixin text-paragraph {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: $text-primary-heading;
+  letter-spacing: 0.035em;
+}
+
+.text-paragraph {
+  @include text-paragraph;
+}
+
+@mixin text-paragraph-sm {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-primary-heading;
+}
+
+@mixin text-link {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: underline;
+  color: $text-primary-heading;
+}
+
+@mixin text-button {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-primary-heading;
+}
+
+@mixin text-button-sm {
+  @include text-button;
+  font-weight: normal;
+}

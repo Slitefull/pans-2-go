@@ -1,0 +1,24 @@
+.customer {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.65fr 1.35fr;
+  grid-template-rows: 1fr;
+  gap: 10px 20px;
+  grid-template-areas:
+    "profile-card tabs";
+  justify-items: stretch;
+  align-items: stretch;
+
+  .profile-card {
+    grid-area: profile-card;
+  }
+
+  .tabs {
+    grid-area: tabs;
+  }
+}
+
+.button-update {
+  margin: 0 0 0 10px;
+}

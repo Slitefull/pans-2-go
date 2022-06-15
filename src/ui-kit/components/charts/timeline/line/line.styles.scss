@@ -1,0 +1,21 @@
+.line {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 15px;
+  background: #265DE3;
+  transition: .3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: .3s;
+  }
+
+  &.left {
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+}

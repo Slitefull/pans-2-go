@@ -1,0 +1,28 @@
+
+.modalStack__container {
+  position: relative;
+}
+
+.modalStack__content {
+
+}
+
+.modalStack__content_enter {
+  position: absolute;
+  transition: left ease-out 250ms;
+  left: 100%;
+}
+
+.modalStack__content_enterActive {
+  left: 0;
+}
+
+.modalStack__content_exit {
+  position: absolute;
+  transition: right ease-out 250ms;
+  right: 0;
+}
+
+.modalStack__content_exitActive {
+  right: 100%;
+}

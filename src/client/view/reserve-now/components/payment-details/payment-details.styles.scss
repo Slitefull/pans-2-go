@@ -1,0 +1,53 @@
+.payment-details {
+  padding: 15px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 10px;
+  grid-template-areas:
+    "card-number card-number"
+    "cvv exp-date"
+    "cardholder-name cardholder-name"
+    "zip-code zip-code";
+
+  .card-number {
+    grid-area: card-number;
+  }
+
+  .cvv {
+    grid-area: cvv;
+  }
+
+  .exp-date {
+    grid-area: exp-date;
+  }
+
+  .cardholder-name {
+    grid-area: cardholder-name;
+  }
+
+  .zip-code {
+    grid-area: zip-code;
+  }
+
+  label {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.035em;
+    color: #333333;
+  }
+
+  input,
+  .StripeElement {
+    padding: 10px 15px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+  }
+
+  input::placeholder {
+    color: #aab7c4;
+  }
+}

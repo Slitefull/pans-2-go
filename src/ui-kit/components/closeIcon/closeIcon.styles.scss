@@ -1,0 +1,33 @@
+@use 'src/ui-kit/styles' as *;
+
+$close-icon-size: 16px !default;
+
+.close-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: $close-icon-size;
+  height: $close-icon-size;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:before, &:after {
+    position: absolute;
+    content: ' ';
+    height: $close-icon-size;
+    width: 2px;
+    background-color: $main-black;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

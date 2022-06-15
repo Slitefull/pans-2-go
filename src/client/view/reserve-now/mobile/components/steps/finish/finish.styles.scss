@@ -1,0 +1,13 @@
+.sixth-step {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 100px;
+  gap: 20px 0;
+
+  .section-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+}

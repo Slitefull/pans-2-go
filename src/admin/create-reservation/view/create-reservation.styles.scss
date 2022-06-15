@@ -1,0 +1,33 @@
+.create-reservation {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  gap: 10px 20px;
+  grid-template-areas:
+    "main-form select-customer"
+    "main-form reservation-summary";
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 0 0 50px;
+
+  .main-form {
+    grid-area: main-form;
+  }
+
+  .select-customer {
+    grid-area: select-customer;
+  }
+
+  .main-form {
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+  }
+}
+
+.button-create {
+  margin: 0 0 0 10px;
+}

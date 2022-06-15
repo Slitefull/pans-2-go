@@ -1,0 +1,42 @@
+@use "src/ui-kit/styles" as *;
+
+.rangeInput_wrapper {
+  width: 40%;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rangeInput {
+  height: 30px;
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+}
+
+.rangeInput__value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.035em;
+}
+
+.rangeInput_leftBtn,
+.rangeInput_rightBtn {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+
+  &:hover {
+    color: #265de3;
+  }
+}

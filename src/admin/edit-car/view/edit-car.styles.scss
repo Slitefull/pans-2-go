@@ -1,0 +1,20 @@
+.edit-car {
+  display: grid;
+  grid-template-columns: 0.65fr 1.35fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 15px 30px;
+  grid-auto-flow: row dense;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "car-card tabs";
+
+  .car-card {
+    grid-area: car-card;
+  }
+
+  .tabs {
+    grid-area: tabs;
+  }
+}

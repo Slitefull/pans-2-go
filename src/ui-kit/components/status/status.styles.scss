@@ -1,0 +1,40 @@
+.status-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 15px;
+  border-radius: 100px;
+  background: grey;
+  color: white;
+  width: fit-content;
+}
+
+.status {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 15px;
+  border-radius: 100px;
+  color: #fff;
+  display: inline-flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  padding: 3px 15px;
+  width: auto;
+
+  &.green {
+    background: #339933;
+  }
+
+  &.red {
+    background: #cc0000;
+  }
+
+  &.grey {
+    background: #919191;
+  }
+
+  &.text-uppercase {
+    text-transform: uppercase;
+  }
+}

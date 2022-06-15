@@ -1,0 +1,59 @@
+.third-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 20px;
+  grid-auto-flow: row dense;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "step-title step-title step-title step-title step-title step-title"
+    "phone phone phone email email email"
+    "whats-app whats-app whats-app emergency-contact emergency-contact emergency-contact"
+    "address address state state zip zip"
+    "notification-preferences notification-preferences notification-preferences notification-preferences notification-preferences notification-preferences";
+
+  .step-title {
+    grid-area: step-title;
+  }
+
+  .phone {
+    width: 100%;
+    grid-area: phone;
+  }
+
+  .email {
+    width: 100%;
+    grid-area: email;
+  }
+
+  .whats-app {
+    width: 100%;
+    grid-area: whats-app;
+  }
+
+  .emergency-contact {
+    width: 100%;
+    grid-area: emergency-contact;
+  }
+
+  .address {
+    width: 100%;
+    grid-area: address;
+  }
+
+  .state {
+    width: 100%;
+    grid-area: state;
+  }
+
+  .zip {
+    width: 100%;
+    grid-area: zip;
+  }
+
+  .notification-preferences {
+    width: 100%;
+    grid-area: notification-preferences;
+  }
+}

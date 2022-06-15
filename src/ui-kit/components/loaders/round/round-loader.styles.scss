@@ -1,0 +1,41 @@
+.round-loader-wrapper {
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  .spinner {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+
+    &:after {
+      content: " ";
+      display: block;
+      border-radius: 50%;
+      border: 6px solid #387be0;
+      border-color: #387be0 transparent #387be0 transparent;
+      animation: loading 1.2s linear infinite;
+      width: 64px;
+      height: 64px;
+    }
+
+    @keyframes loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+.fit-content {
+  width: fit-content;
+}

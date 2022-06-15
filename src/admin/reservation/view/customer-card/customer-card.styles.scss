@@ -1,0 +1,83 @@
+@use "../../../../ui-kit/styles/index" as *;
+
+.customer-card {
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  padding: 30px;
+  width: 100%;
+
+  @include mobile {
+    box-shadow: none;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 12px;
+  }
+
+  &__title {
+    color: #333;
+    flex: 1 1 auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  &__status {
+    align-items: center;
+    background: #333;
+    border-radius: 100px;
+    color: #fff;
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 3px 15px;
+  }
+
+  &__avatar {
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 12px;
+    display: flex;
+    height: 167px;
+    margin: 0 0 12px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+    &_icon {
+      position: relative;
+    }
+  }
+
+  &__phones,
+  &__name,
+  &__email,
+  &__rows {
+    color: #333;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

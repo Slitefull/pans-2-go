@@ -1,0 +1,94 @@
+.fifth-step {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 10px 20px;
+  grid-auto-flow: row dense;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "step-title step-title"
+    "card-number card-number"
+    "cvv expire-date"
+    "cardholder-name cardholder-name"
+    "billing-zip-code billing-zip-code";
+
+  .step-title {
+    width: 100%;
+    grid-area: step-title;
+  }
+
+  .card-number {
+    width: 100%;
+    grid-area: card-number;
+  }
+
+  .cvv {
+    width: 100%;
+    grid-area: cvv;
+  }
+
+  .expire-date {
+    width: 100%;
+    grid-area: expire-date;
+  }
+
+  .cardholder-name {
+    width: 100%;
+    grid-area: cardholder-name;
+  }
+
+  .billing-zip-code {
+    width: 100%;
+    grid-area: billing-zip-code;
+  }
+
+  label {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.035em;
+    color: #333333;
+  }
+
+  input,
+  .StripeElement {
+    padding: 10px 15px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+  }
+
+  input::placeholder {
+    color: #aab7c4;
+  }
+}
+
+.password-step {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 20px;
+  grid-auto-flow: row dense;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "step-title"
+    "password"
+    "repeat-password";
+
+  .step-title {
+    grid-area: step-title;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .password {
+    grid-area: password;
+  }
+
+  .repeat-password {
+    grid-area: repeat-password;
+  }
+
+}

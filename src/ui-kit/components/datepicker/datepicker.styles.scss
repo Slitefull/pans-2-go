@@ -1,0 +1,27 @@
+.custom-datepicker {
+  width: inherit;
+
+  &__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+
+  .datepicker {
+    width: 100%;
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.035em;
+    color: #919191;
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+  }
+}

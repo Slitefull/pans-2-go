@@ -1,0 +1,309 @@
+@use "src/ui-kit/styles" as *;
+
+.profile {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 10px;
+  grid-template-areas: "user-card profile-form";
+
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #333333;
+    margin: 0 0 15px;
+  }
+
+  @include mobile {
+    grid-template-columns: none;
+    grid-template-areas:
+      "user-card"
+      "profile-form";
+  }
+
+  .user-card {
+    grid-area: user-card;
+  }
+
+  .profile-form {
+    grid-area: profile-form;
+  }
+
+  &-form {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+
+    @include mobile {
+      padding: 15px;
+    }
+  }
+
+  .personal-details-form {
+    width: 100%;
+
+    &__input {
+      width: 100%;
+    }
+
+    .name-container {
+      display: grid;
+      grid-auto-flow: row dense;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0 10px;
+      grid-template-areas: "first-name last-name";
+      margin: 0 0 30px;
+
+      @include mobile {
+        grid-auto-flow: row dense;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px 10px;
+        grid-template-areas:
+          "first-name"
+          "last-name";
+      }
+
+      .first-name {
+        width: 100%;
+        grid-area: first-name;
+      }
+
+      .last-name {
+        width: 100%;
+        grid-area: last-name;
+      }
+    }
+
+    .contacts-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 15px 10px;
+      grid-auto-flow: row dense;
+      justify-items: stretch;
+      align-items: stretch;
+      margin: 0 0 30px;
+      grid-template-areas:
+        "email email phone phone"
+        "emergency-contact-phone emergency-contact-phone whats-app-phone whats-app-phone"
+        "zip state address address";
+
+      .email {
+        width: 100%;
+        grid-area: email;
+      }
+
+      .phone {
+        width: 100%;
+        grid-area: phone;
+      }
+
+      .emergency-contact-phone {
+        width: 100%;
+        grid-area: emergency-contact-phone;
+      }
+
+      .whats-app-phone {
+        width: 100%;
+        grid-area: whats-app-phone;
+      }
+
+      .zip {
+        width: 100%;
+        grid-area: zip;
+      }
+
+      .state {
+        width: 100%;
+        grid-area: state;
+      }
+
+      .address {
+        width: 100%;
+        grid-area: address;
+      }
+    }
+
+    .my-notification-preferences {
+      display: flex;
+      flex-direction: column;
+
+      &__options {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+
+  .profile-documents-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 15px;
+    background: #FFFFFF;
+    border-radius: 16px;
+  }
+
+  .driver-licence {
+    margin: 30px 0 0 0;
+
+    .licences-preview {
+      max-height: 110px;
+
+      &__image {
+        height: 100px !important;
+      }
+    }
+
+    .driver-licence-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-auto-columns: 1fr;
+      gap: 15px 10px;
+      grid-auto-flow: row dense;
+      justify-items: stretch;
+      align-items: stretch;
+      grid-template-areas:
+          "licence-uploader licence-uploader licence-uploader dob issue-date exp-date"
+          "licence-uploader licence-uploader licence-uploader licence-number licence-number licence-number";
+
+      @include mobile {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px 5px;
+        grid-template-areas:
+            "licence-uploader licence-uploader licence-uploader"
+            "dob issue-date exp-date"
+            "licence-number licence-number licence-number";
+      }
+
+      .licence-uploader {
+        grid-area: licence-uploader;
+
+        .ui-kit-uploader--image {
+          border-radius: 12px;
+          height: 140px;
+        }
+
+        &__input {
+          height: 150px;
+        }
+      }
+
+      .dob {
+        grid-area: dob;
+      }
+
+      .issue-date {
+        grid-area: issue-date;
+      }
+
+      .exp-date {
+        grid-area: exp-date;
+      }
+
+      .personal-details-form__input {
+        max-width: 120px;
+        @include mobile {
+          max-width: 80px;
+        }
+      }
+      .licence-number {
+        grid-area: licence-number;
+        .personal-details-form__input {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .profile-payment-details {
+    margin: 30px 0 0 0;
+
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #333333;
+      margin: 0 0 15px;
+    }
+
+    &__form {
+      display: grid;
+      grid-auto-flow: row dense;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 15px 10px;
+      grid-template-areas:
+          "card-number card-number card-number card-number card-number cvv"
+          "cardholder-name cardholder-name zip-code zip-code exp-date exp-date";
+      justify-items: stretch;
+      align-items: stretch;
+
+      @include mobile {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "card-number card-number card-number card-number"
+            "cvv cvv exp-date exp-date"
+            "cardholder-name cardholder-name zip-code zip-code"
+      }
+
+      label {
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.035em;
+        color: #333333;
+      }
+
+      .card-number {
+        grid-area: card-number;
+      }
+
+      .cvv {
+        grid-area: cvv;
+      }
+
+      .cardholder-name {
+        grid-area: cardholder-name;
+      }
+
+      .zip-code {
+        grid-area: zip-code;
+      }
+
+      .exp-date {
+        grid-area: exp-date;
+      }
+
+      input,
+      .StripeElement {
+        padding: 10px 15px;
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+      }
+
+      input::placeholder {
+        color: #aab7c4;
+      }
+
+      &__input {
+        width: 100%;
+      }
+    }
+  }
+
+  .button-update {
+    @include mobile {
+      margin: 20px 0 40px;
+    }
+  }
+
+  .profile-tab-header {
+    margin: 0 0 30px;
+  }
+}

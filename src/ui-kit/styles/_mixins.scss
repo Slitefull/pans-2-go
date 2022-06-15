@@ -1,0 +1,78 @@
+/*
+  Create styles for right-to-left and left-to-right directions
+  Code:
+      .sidebar {
+          @include rtl(float, left, right);
+      }
+  Result:
+      .sidebar {
+          float: left;
+      }
+      [dir=rtl] .sidebar {
+          float: right;
+      }
+*/
+@mixin rtl($property, $ltr-value, $rtl-value) {
+  #{$property}: $ltr-value;
+
+  [dir="rtl"] & {
+    #{$property}: $rtl-value;
+  }
+}
+
+/*
+  Create ellipsis overflow
+  &__text {
+    @include ellipsis;
+  }
+
+  > span {
+    @include ellipsis($nowrap: false);
+  }
+*/
+@mixin ellipsis($nowrap: true) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @if $nowrap {
+    white-space: nowrap;
+  }
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@mixin center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin stretch {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

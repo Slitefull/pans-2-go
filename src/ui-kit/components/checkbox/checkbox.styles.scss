@@ -1,0 +1,18 @@
+@use "src/ui-kit/styles" as *;
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+
+  &-input {
+    cursor: pointer;
+    min-height: 18px;
+    min-width: 18px;
+  }
+
+  &-label {
+    font-size: 12px;
+    color: #333333;
+    margin: 0 0 0 10px;
+  }
+}

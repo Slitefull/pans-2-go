@@ -1,0 +1,38 @@
+.table-options-wrapper {
+  display: flex;
+  z-index: 999999999;
+
+  .table-options {
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 0;
+    min-width: 123px;
+    padding: 15px;
+    position: absolute;
+    z-index: 9999999999;
+    width: fit-content;
+
+    &__element {
+      color: #333;
+      cursor: pointer;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0.035em;
+      line-height: 150%;
+      margin-bottom: 10px;
+      z-index: 999999999;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        color: #265de3;
+      }
+    }
+  }
+}

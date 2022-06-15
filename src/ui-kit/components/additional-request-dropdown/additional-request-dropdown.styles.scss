@@ -1,0 +1,40 @@
+@use '../../../ui-kit/styles/index' as *;
+
+.additional-request-dropdown {
+  max-width: 100%;
+  width: 250px;
+  align-content: center;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &__title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #333333;
+    }
+
+    .arrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg) !important;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0;
+  }
+}

@@ -1,0 +1,185 @@
+/* DM Sans */
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans/DMSans-Bold.eot");
+  src: url("/fonts/DMSans/DMSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/DMSans/DMSans-Bold.woff2") format("woff2"),
+    url("/fonts/DMSans/DMSans-Bold.woff") format("woff"),
+    url("/fonts/DMSans/DMSans-Bold.ttf") format("truetype"),
+    url("/fonts/DMSans/DMSans-Bold.svg#DMSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans/DMSans-Medium.eot");
+  src: url("/fonts/DMSans/DMSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/DMSans/DMSans-Medium.woff2") format("woff2"),
+    url("/fonts/DMSans/DMSans-Medium.woff") format("woff"),
+    url("/fonts/DMSans/DMSans-Medium.ttf") format("truetype"),
+    url("/fonts/DMSans/DMSans-Medium.svg#DMSans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans/DMSans-MediumItalic.eot");
+  src: url("/fonts/DMSans/DMSans-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/DMSans/DMSans-MediumItalic.woff2") format("woff2"),
+    url("/fonts/DMSans/DMSans-MediumItalic.woff") format("woff"),
+    url("/fonts/DMSans/DMSans-MediumItalic.ttf") format("truetype"),
+    url("/fonts/DMSans/DMSans-MediumItalic.svg#DMSans-MediumItalic")
+      format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans/DMSans-Italic.eot");
+  src: url("/fonts/DMSans/DMSans-Italic.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/DMSans/DMSans-Italic.woff2") format("woff2"),
+    url("/fonts/DMSans/DMSans-Italic.woff") format("woff"),
+    url("/fonts/DMSans/DMSans-Italic.ttf") format("truetype"),
+    url("/fonts/DMSans/DMSans-Italic.svg#DMSans-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans/DMSans-BoldItalic.eot");
+  src: url("/fonts/DMSans/DMSans-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/DMSans/DMSans-BoldItalic.woff2") format("woff2"),
+    url("/fonts/DMSans/DMSans-BoldItalic.woff") format("woff"),
+    url("/fonts/DMSans/DMSans-BoldItalic.ttf") format("truetype"),
+    url("/fonts/DMSans/DMSans-BoldItalic.svg#DMSans-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans/DMSans-Regular.eot");
+  src: url("/fonts/DMSans/DMSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/DMSans/DMSans-Regular.woff2") format("woff2"),
+    url("/fonts/DMSans/DMSans-Regular.woff") format("woff"),
+    url("/fonts/DMSans/DMSans-Regular.ttf") format("truetype"),
+    url("/fonts/DMSans/DMSans-Regular.svg#DMSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Inter */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Bold.eot");
+  src: url("/fonts/Inter/Inter-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Inter/Inter-Bold.woff2") format("woff2"),
+    url("/fonts/Inter/Inter-Bold.woff") format("woff"),
+    url("/fonts/Inter/Inter-Bold.ttf") format("truetype"),
+    url("/fonts/Inter/Inter-Bold.svg#Inter-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Black.eot");
+  src: url("/fonts/Inter/Inter-Black.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Inter/Inter-Black.woff2") format("woff2"),
+    url("/fonts/Inter/Inter-Black.woff") format("woff"),
+    url("/fonts/Inter/Inter-Black.ttf") format("truetype"),
+    url("/fonts/Inter/Inter-Black.svg#Inter-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-ExtraBold.eot");
+  src: url("/fonts/Inter/Inter-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Inter/Inter-ExtraBold.woff2") format("woff2"),
+    url("/fonts/Inter/Inter-ExtraBold.woff") format("woff"),
+    url("/fonts/Inter/Inter-ExtraBold.ttf") format("truetype"),
+    url("/fonts/Inter/Inter-ExtraBold.svg#Inter-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-SemiBold.eot");
+  src: url("/fonts/Inter/Inter-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Inter/Inter-SemiBold.woff2") format("woff2"),
+    url("/fonts/Inter/Inter-SemiBold.woff") format("woff"),
+    url("/fonts/Inter/Inter-SemiBold.ttf") format("truetype"),
+    url("/fonts/Inter/Inter-SemiBold.svg#Inter-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Regular.eot");
+  src: url("/fonts/Inter/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Inter/Inter-Regular.woff2") format("woff2"),
+    url("/fonts/Inter/Inter-Regular.woff") format("woff"),
+    url("/fonts/Inter/Inter-Regular.ttf") format("truetype"),
+    url("/fonts/Inter/Inter-Regular.svg#Inter-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Medium.eot");
+  src: url("/fonts/Inter/Inter-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Inter/Inter-Medium.woff2") format("woff2"),
+    url("/fonts/Inter/Inter-Medium.woff") format("woff"),
+    url("/fonts/Inter/Inter-Medium.ttf") format("truetype"),
+    url("/fonts/Inter/Inter-Medium.svg#Inter-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Material Icons */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/material-icons/material.woff2") format("woff2");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}

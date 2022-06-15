@@ -1,0 +1,26 @@
+@use "../../../../ui-kit/styles/index" as *;
+
+.reservation {
+  max-width: 666px;
+  width: 100%;
+
+  .block-with-info {
+    margin-bottom: 36px;
+
+    p {
+      color: #333;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      margin: 0 0 12px;
+    }
+
+    .ui-text-input {
+      width: 100%;
+    }
+    .dropdown .select span {
+      color: #265de3;
+    }
+  }
+}

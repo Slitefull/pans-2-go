@@ -1,0 +1,178 @@
+@use "src/ui-kit/styles" as *;
+
+.reservation-upcoming {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  margin: 0 0 20px;
+
+  &:first-child {
+    @include mobile {
+      margin: 10px 0;
+    }
+  }
+
+  .reservations-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    @include mobile {
+      justify-content: space-between;
+    }
+
+    .finish-trip-button {
+      background: #265DE3;
+      color: #FFFFFF;
+    }
+  }
+
+  @include mobile {
+    align-items: inherit;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .kit-button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.035em;
+    min-width: 176px;
+    text-transform: uppercase;
+
+    @include mobile {
+      margin: 15px 0 0 0;
+      min-width: 120px;
+    }
+  }
+
+  .upcoming-info {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: 0;
+    grid-template-areas:
+    "car-image reservation-time"
+    "car-image car-info";
+
+    @include mobile {
+      grid-template-columns: 0.3fr 1.7fr;
+      grid-template-areas:
+    "car-image reservation-time"
+    "car-info car-info";
+    }
+
+    .time {
+      font-weight: 500;
+    }
+
+    .link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration-line: underline;
+      color: #265DE3;
+      cursor: pointer;
+    }
+
+    &__text {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      p {
+        color: #333;
+        display: flex;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0 0 12px;
+        width: max-content;
+      }
+
+      img {
+        margin-right: 14px;
+      }
+    }
+
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      margin: 0 35px 0 0;
+
+      @include mobile {
+        width: 90px;
+        height: 90px;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}
+
+.car-info {
+  grid-area: car-info;
+}
+
+.car-image {
+  grid-area: car-image;
+}
+
+.reservation-time {
+  grid-area: reservation-time;
+
+  @include mobile {
+    margin: auto;
+  }
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0 0 15px;
+}
+
+.change-date-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.datepicker-wrapper {
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 0 0 15px;
+
+  .datepicker {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #265DE3;
+    border-radius: 10px;
+    border: 1px solid #90909052;
+    padding: 5px 10px;
+    width: 100%;
+  }
+}
+
+.datepicker-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin: 5px 0;
+}

@@ -1,0 +1,33 @@
+@use "src/ui-kit/styles" as *;
+
+.image-preview-modal {
+  height: 100vh;
+  width: 100vw;
+  margin: auto 0 auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .close-icon-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 10px;
+    background: #000000;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  .image-preview {
+    width: auto;
+    border-radius: 15px;
+    max-width: 1000px;
+
+    @include mobile {
+      max-width: 350px;
+    }
+  }
+}

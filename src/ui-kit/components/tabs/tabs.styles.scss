@@ -1,0 +1,42 @@
+@use "src/ui-kit/styles" as *;
+
+.tabs-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+
+    &__element {
+      padding: 15px 20px;
+      background: transparent;
+      border-radius: 14px;
+      color: #333333;
+      cursor: pointer;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 150%;
+      text-align: center;
+      width: 100%;
+
+      @include mobile {
+        padding: 5px 10px;
+      }
+
+      &.active {
+        background: #265de3;
+        color: #ffffff;
+        font-weight: 600;
+      }
+    }
+  }
+}

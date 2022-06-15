@@ -1,0 +1,72 @@
+@use "../../../../../ui-kit/styles/index" as *;
+
+.info {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 30px;
+  width: 100%;
+}
+
+.block-with-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+
+  &__field {
+    width: calc(50% - 10px);
+  }
+}
+
+.pick-up,
+.drop-off,
+.carsList,
+.carsRentTypes,
+.carsCategories,
+.carsPackages,
+.range,
+.area,
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+
+  &__row {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+
+  &__date,
+  &__time {
+    width: calc(50% - 10px);
+
+    &__label {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      padding-bottom: 12px;
+    }
+
+    input {
+      border: 1px solid #e0e0e0;
+      box-sizing: border-box;
+      border-radius: 12px;
+      color: #265de3;
+      height: 38px;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      width: 100%;
+    }
+  }
+}

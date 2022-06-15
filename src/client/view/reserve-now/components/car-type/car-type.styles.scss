@@ -1,0 +1,64 @@
+@use "src/ui-kit/styles" as *;
+
+.car-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 15px;
+  background: #FFFFFF;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: 1s;
+  margin: 0 15px 0 0;
+
+  @include mobile {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+  }
+
+  &.active {
+    border: 1px solid #000000;
+    transition: 1s;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #333333;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  &__starting-from {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #919191;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #339933;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+  }
+}

@@ -1,0 +1,25 @@
+.second-step {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 20px;
+  grid-auto-flow: row dense;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "step-title"
+    "first-name"
+    "last-name";
+
+  .step-title {
+    grid-area: step-title;
+  }
+
+  .first-name {
+    grid-area: first-name;
+  }
+
+  .last-name {
+    grid-area: last-name;
+  }
+}

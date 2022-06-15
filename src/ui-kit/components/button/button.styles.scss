@@ -1,0 +1,64 @@
+@use 'src/ui-kit/styles' as *;
+
+.kit-button {
+  @include text-button;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 15px;
+  background: transparent;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--withIcon {
+    i,
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  &--outline {
+    background: $bg-white;
+    border: 1px solid $stroke;
+    box-shadow: 0 4px 16px 8px rgba(166, 170, 193, 0.03);
+  }
+
+  &--skeleton {
+    color: $secondary-background;
+    background-color: $secondary-background;
+    border: 1px solid $secondary-background;
+    pointer-events: none;
+  }
+
+  &--primary {
+    background: $main-black;
+    color: $main-white;
+  }
+
+  &--headless {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: $bg-grey;
+    color: $text-placeholder;
+    cursor: not-allowed;
+
+    i {
+      color: $text-placeholder;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.additional-request {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 250px;
+  background: #FFFFFF;
+
+  .right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #333333;
+  }
+
+  &__price {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #339933;
+    margin: 0 20px 0 0;
+  }
+
+  &__checkbox {
+    cursor: pointer;
+  }
+}

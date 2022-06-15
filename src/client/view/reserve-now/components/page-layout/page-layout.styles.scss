@@ -1,0 +1,55 @@
+@use "src/ui-kit/styles" as *;
+
+.reserve-now-page-layout {
+  .layout-header {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #333333;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      height: 40px;
+
+      @include mobile {
+        position: fixed;
+        bottom: 30px;
+        width: 90%;
+        z-index: 99999;
+      }
+
+      .next-button {
+        padding: 0 15px;
+        background: #265DE3;
+        border-radius: 12px;
+        color: #FFFFFF;
+        margin: 0 0 0 5px;
+        border: none;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+
+        @include mobile {
+          width: 100%;
+        }
+      }
+
+      .prev-button {
+        background: #333333;
+        border-radius: 12px;
+
+        @include mobile {
+          width: 20%;
+        }
+      }
+    }
+  }
+}

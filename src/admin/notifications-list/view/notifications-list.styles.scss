@@ -1,0 +1,20 @@
+.notifications-list {
+  position: absolute;
+  padding: 15px 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  max-height: 580px;
+  z-index: 999999999;
+  overflow: auto;
+  top: 50px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.035em;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 0 0 5px;
+    margin: 0 0 15px;
+  }
+}

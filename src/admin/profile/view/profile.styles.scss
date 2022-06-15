@@ -1,0 +1,33 @@
+@use "../../../ui-kit/styles/index" as *;
+
+.profile-form {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 24px;
+  grid-template-areas: "user-card profile-form";
+
+  .user-card {
+    grid-area: user-card;
+  }
+
+  .profile-form {
+    grid-area: profile-form;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+  }
+
+  .kit-button {
+    line-height: 1.145;
+    min-width: 101px;
+  }
+}

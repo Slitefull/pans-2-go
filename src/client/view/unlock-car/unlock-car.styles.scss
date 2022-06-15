@@ -1,0 +1,71 @@
+@use "src/ui-kit/styles" as *;
+
+.unlock-car {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px;
+
+  .car-info-wrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 1.5fr;
+    margin: 0 0 30px;
+    gap: 0;
+    grid-template-areas:
+    "car-image reservation-time"
+    "car-image car-info";
+
+    @include mobile {
+      grid-template-columns: 0.3fr 1.7fr;
+      grid-template-areas:
+    "car-image reservation-time"
+    "car-info car-info";
+
+      margin: 0 0 15px;
+    }
+
+    .time {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #333333;
+    }
+
+    .text {
+      font-size: 14px;
+      color: #333333;
+      font-weight: 400;
+      margin: 0 0 10px;
+    }
+
+    .address {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        margin-right: 14px;
+      }
+    }
+
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      margin: 0 35px 0 0;
+
+      img {
+        width: inherit;
+      }
+
+      @include mobile {
+        width: 65px;
+        height: 65px;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}

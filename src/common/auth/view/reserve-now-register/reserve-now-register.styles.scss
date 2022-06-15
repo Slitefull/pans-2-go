@@ -1,0 +1,194 @@
+@use "../../../../ui-kit/styles/index" as *;
+
+.register-form {
+  &__body {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include mobile {
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 70px;
+    }
+
+    @include tabletPortrait {
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 150%;
+      color: #333333;
+    }
+
+    @include mobile {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      h1 {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  &__left-section {
+    width: 357px;
+
+    @include mobile {
+      width: 90%;
+    }
+
+    @include tabletPortrait {
+      width: 100%;
+    }
+  }
+
+  &__right-section {
+    width: 100%;
+    @include mobile {
+      width: 90%;
+    }
+
+    @include tabletPortrait {
+      width: 100%;
+    }
+  }
+
+  &__block-info {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &.justify {
+      justify-content: space-between;
+    }
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .personal-details-form {
+    &__input {
+      margin-bottom: 10px;
+      width: calc(100% - 5px);
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+
+      @include mobile {
+        justify-content: space-between;
+      }
+    }
+
+    h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #333333;
+      margin: 0 0 12px;
+    }
+  }
+
+  .driver-license-upload-form {
+    &__title {
+      margin: 10px 0;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+
+    &__submit {
+      margin: 0 20px 0 0;
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    @include mobile {
+      background: #e5e5e5;
+      bottom: 0;
+      left: 0;
+      justify-content: space-between;
+      position: fixed;
+      right: 0;
+      padding: 15px;
+      margin: 0;
+      z-index: 3;
+    }
+  }
+}
+
+.hide-titles .inputLabel,
+.d-none {
+  display: none;
+}
+
+.count-2 {
+  & > .row,
+  .ui-text-input__label {
+    width: 50%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.mt-36 {
+  margin-top: 36px !important;
+}
+
+.notification-section > div > div {
+  display: flex;
+
+  @include mobile {
+    align-items: flex-start !important;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    margin: 0 !important;
+
+    div {
+      margin-bottom: 10px;
+    }
+  }
+}

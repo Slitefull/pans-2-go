@@ -1,0 +1,10 @@
+@use "../../../../../../../ui-kit/styles/index" as *;
+
+.rent-type-step {
+  display: flex;
+  flex-direction: row;
+
+  @include mobile {
+    justify-content: space-between;
+  }
+}

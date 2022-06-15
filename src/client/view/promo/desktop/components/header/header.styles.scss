@@ -1,0 +1,27 @@
+@use "src/ui-kit/styles" as *;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #E6F0FF;
+  padding: 20px 120px;
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  .header-login-button {
+    padding: 0 30px;
+    font-weight: 300;
+  }
+
+  .settings-wrapper {
+    display: flex;
+    align-items: center;
+
+    &__text {
+      margin-right: 10px;
+    }
+  }
+}

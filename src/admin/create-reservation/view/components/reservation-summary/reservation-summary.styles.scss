@@ -1,0 +1,103 @@
+@use "src/ui-kit/styles" as *;
+
+.reservation-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 20px 0;
+  grid-auto-flow: row;
+  padding: 25px 15px;
+  height: fit-content;
+  background: #FFFFFF;
+  border-radius: 15px;
+  grid-template-areas:
+    "summary-title summary-title summary-title"
+    "full-day-title full-day-price full-day-price"
+    "reservation-additional-request reservation-additional-request reservation-additional-request"
+    "total total total";
+
+  .summary-title {
+    grid-area: summary-title;
+    font-weight: 500;
+  }
+
+  .vehicle {
+    grid-area: vehicle;
+  }
+
+  .vehicle-type {
+    grid-area: vehicle-type;
+  }
+
+  .vehicle-price {
+    grid-area: vehicle-price;
+  }
+
+  .full-day-title {
+    grid-area: full-day-title;
+  }
+
+  .full-day-price {
+    grid-area: full-day-price;
+  }
+
+  .reservation-additional-request {
+    grid-area: reservation-additional-request;
+  }
+
+  .total {
+    grid-area: total;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 0;
+
+    &__title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #333333;
+    }
+
+    &__price {
+      font-size: 12px;
+      line-height: 18px;
+      color: #333333;
+    }
+  }
+
+  .title {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #333333;
+    width: fit-content;
+    margin: 0 0 0 auto;
+  }
+
+  .event {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #265DE3;
+    width: fit-content;
+    margin: 0 0 0 auto;
+  }
+
+  .reservation-additional-request {
+    border-bottom: 1px solid #E0E0E0;
+
+    &__element {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 15px;
+    }
+  }
+}

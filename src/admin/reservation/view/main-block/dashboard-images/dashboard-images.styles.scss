@@ -1,0 +1,57 @@
+@use "../../../../../ui-kit/styles/index" as *;
+
+.dashboard-image {
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 30px;
+  width: 100%;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  img {
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__block {
+    box-sizing: border-box;
+    width: calc(50% - 6px);
+
+    p {
+      color: #333;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 150%;
+      margin: 12px 0 0;
+    }
+  }
+
+  &__avatar {
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 167px;
+    justify-content: center;
+    width: 100%;
+
+    &_icon div {
+      margin: 0 !important;
+    }
+  }
+}

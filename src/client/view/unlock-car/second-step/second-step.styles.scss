@@ -1,0 +1,61 @@
+@use "src/ui-kit/styles" as *;
+
+.second-step {
+  .content {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+
+    .text {
+      font-size: 12px;
+      line-height: 150%;
+      color: #333333;
+      margin: 48px 0;
+
+      @include mobile {
+        margin: 15px 0;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 48px 0 0 0;
+    width: 100%;
+
+    button {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+      height: 38px;
+      width: calc(50% - 5px);
+    }
+  }
+  .ui-kit-uploader {
+    align-items: center;
+    border: 2px dashed #919191;
+    box-sizing: border-box;
+    border-radius: 12px;
+    cursor: pointer;
+    min-height: 250px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+
+    &__label {
+      color: #333;
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      margin: 0 0 12px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@use "../../../ui-kit/styles/index" as *;
+
+.reservation-page {
+  justify-content: space-between;
+  &__form {
+    width: 700px;
+    border-radius: 5px;
+    padding: 20px 40px;
+    box-shadow: 0 0 0 0 #000000, 2px 2px 8px 4px rgb(0 0 0 / 20%);
+
+    @include mobile {
+      box-shadow: none;
+      flex-direction: column;
+    }
+  }
+}
+
+.reservation-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+
+  @include mobile {
+    box-shadow: none;
+    flex-direction: column;
+  }
+}
+
+.reservation-btn {
+  background-color: white;
+  padding: 10px 15px;
+  margin-left: 6px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  &.black {
+    background-color: #333;
+    color: #fff;
+
+    &:hover {
+      background-color: #265de3;
+    }
+  }
+}
+
+.right-side-block {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 357px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.state {
+  height: auto !important;
+  .stepper {
+    height: auto !important;
+    width: 100%;
+  }
+}

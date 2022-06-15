@@ -1,0 +1,38 @@
+.fourth-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 20px;
+  grid-auto-flow: row dense;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "step-title step-title step-title"
+    "licence-uploader licence-uploader licence-uploader"
+    "dob issue-date exp-date"
+    "licence-number licence-number licence-number";
+
+  .step-title {
+    grid-area: step-title;
+  }
+
+  .licence-uploader {
+    grid-area: licence-uploader;
+  }
+
+  .dob {
+    grid-area: dob;
+  }
+
+  .issue-date {
+    grid-area: issue-date;
+  }
+
+  .exp-date {
+    grid-area: exp-date;
+  }
+
+  .licence-number {
+    grid-area: licence-number;
+  }
+}

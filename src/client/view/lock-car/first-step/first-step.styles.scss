@@ -1,0 +1,72 @@
+@use "src/ui-kit/styles" as *;
+
+.first-step {
+  display: flex;
+  flex-direction: column;
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 48px;
+
+    @include mobile {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__section {
+      width: calc(33.3% - 16px);
+
+      @include mobile {
+        width: 100%
+      }
+
+      .lock-car-image-preview {
+        max-width: 80% !important;
+        max-height: 80% !important;
+        height: 180px !important;
+      }
+
+      .section-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0 0 12px;
+      }
+
+      @include mobile {
+        margin: 0 0 20px;
+      }
+
+      .ui-text-input {
+        width: 100%;
+      }
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    button {
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
+
+  .ui-kit-uploader {
+    height: 166px;
+    width: 100%;
+  }
+  .pencilButton {
+    background-color: #efefef;
+  }
+}

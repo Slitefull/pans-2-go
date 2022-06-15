@@ -1,0 +1,49 @@
+@use 'src/ui-kit/styles' as *;
+
+.dateTimeInput {
+  position: relative;
+}
+
+.dateTimeInput__container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: fit-content;
+  cursor: pointer;
+
+  border-radius: 20px;
+  background-color: $secondary-background;
+  border: 1px solid $secondary-background;
+}
+
+.dateTimeInput__container_error {
+  border: 1px solid $main-red;
+}
+
+.dateTimeInput__input {
+  display: none;
+}
+
+.dateTimeInput__icon {
+  color: $secondary-color;
+  margin-right: 5px;
+}
+
+.dateTimeInput__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dateTimeInput__time {
+  margin-right: 20px;
+}
+
+.dateTimeInput__error {
+  color: $main-red;
+  font-size: 14px;
+  padding-left: 15px;
+  font-style: italic;
+  display: inline-block;
+  padding-top: 3px;
+  padding-bottom: 7px;
+}

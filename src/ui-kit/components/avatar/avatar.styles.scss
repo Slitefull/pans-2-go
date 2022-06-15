@@ -1,0 +1,58 @@
+@use 'src/ui-kit/styles' as *;
+
+.avatar {
+  position: relative;
+}
+
+.avatar__image {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $secondary-background;
+  opacity: 0;
+  transition: opacity ease-out 75ms;
+}
+
+.avatar__overlay_skeleton {
+  opacity: 1;
+}
+
+.avatar__status {
+  position: absolute;
+  right: -1px;
+  bottom: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transition: background-color ease-in-out 200ms, border ease-in-out 200ms, visibility ease-in-out 200ms;
+  border: 2px solid white;
+  background-color: $main-green;
+}
+
+.avatar__status_wasOnline {
+  border: 2px solid $main-green;
+  background-color: white;
+}
+
+.avatar__status_away {
+  border: 2px solid $main-yellow;
+  background-color: white;
+}
+
+.avatar__status_hidden {
+  border: 2px solid transparent;
+  background-color: transparent;
+}
+
+.avatar__editButton {
+  position: absolute;
+  bottom: 2px;
+  right: -1px;
+}

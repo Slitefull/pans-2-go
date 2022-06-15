@@ -1,0 +1,5 @@
+"key","en"
+"sessionUser.userHasBeenSuccessfullyUpdated","User has been successfully updated!"
+"sessionUser.errorWithUpdating","Error with updating"
+"sessionUser.avatarHasBeenRemovedSuccessfully","Avatar has been removed successfully"
+"sessionUser.errorWithDeletingAvatar","Error with deleting avatar"

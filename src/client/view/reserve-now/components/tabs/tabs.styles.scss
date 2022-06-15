@@ -1,0 +1,77 @@
+@use "../../../../../ui-kit/styles/index" as *;
+
+.reserve-now-tabs-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include mobile {
+    padding: 0 0 80px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 50px;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    overflow-x: scroll;
+
+    @include mobile {
+      padding: 10px;
+    }
+
+    &__element {
+      display: flex;
+      padding: 0 5px;
+      align-items: center;
+      background: transparent;
+      border-radius: 14px;
+      color: #333333;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      text-align: center;
+      justify-content: center;
+
+      .step-title {
+        font-size: 12px;
+        width: max-content;
+        line-height: 18px;
+        color: #333333;
+      }
+
+      .step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        background: #919191;
+        border-radius: 70px;
+        margin: 0 5px 0 0;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+
+        &.active {
+          background: #265DE3;
+          border-radius: 70px;
+        }
+      }
+
+      @include mobile {
+        padding: 5px 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@use 'src/ui-kit/styles' as *;
+
+.pencilButton {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}

@@ -1,0 +1,48 @@
+@use '../../../../ui-kit/styles/index' as *;
+
+.personal-details-form {
+  width: 100%;
+
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #333333;
+    margin: 0 0 15px;
+  }
+
+  .name-container {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 10px;
+    grid-template-areas: "first-name last-name";
+    margin: 0 0 30px;
+
+    .first-name {
+      grid-area: first-name;
+    }
+
+    .last-name {
+      grid-area: last-name;
+    }
+  }
+
+  .contacts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 10px;
+    grid-auto-flow: row dense;
+    grid-template-areas: "email phone";
+
+    .email {
+      grid-area: email;
+    }
+
+    .phone {
+      grid-area: phone;
+    }
+  }
+}

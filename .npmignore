@@ -1,0 +1,7 @@
+/node_modules
+/build
+/.eslintcache
+/package.json
+/yarn.lock
+/public/locales
+/coverage

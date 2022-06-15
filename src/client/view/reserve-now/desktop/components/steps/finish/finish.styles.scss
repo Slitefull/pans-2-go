@@ -1,0 +1,40 @@
+.sixth-step-desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "reservation-summary-title payment-details-title rules-title"
+    "reservation-summary payment-details rules";
+
+  .reservation-summary-title {
+    grid-area: reservation-summary-title;
+  }
+
+  .reservation-summary {
+    grid-area: reservation-summary;
+  }
+
+  .payment-details-title {
+    grid-area: payment-details-title;
+  }
+
+  .payment-details {
+    grid-area: payment-details;
+  }
+
+  .rules-title {
+    grid-area: rules-title;
+  }
+
+  .rules {
+    grid-area: rules;
+  }
+
+  .section-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+}

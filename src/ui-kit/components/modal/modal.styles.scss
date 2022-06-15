@@ -1,0 +1,192 @@
+@use 'src/ui-kit/styles' as *;
+
+$margin-topActive: 10vh;
+$margin-top: calc(10vh + 20px);
+$animationTiming: 75ms;
+
+.modal__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  align-items: baseline;
+  z-index: 1000;
+  overflow-y: auto;
+  display: none;
+}
+
+.modal__container_enter {
+  display: flex;
+}
+
+.modal__container_enterDone {
+  display: flex;
+}
+
+.modal__container_exit {
+  display: flex;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  display: none;
+  opacity: 0;
+}
+
+.modal__overlay_enter {
+  display: block;
+}
+
+.modal__overlay_enterActive {
+  opacity: 1;
+  transition: opacity $animationTiming linear;
+}
+
+.modal__overlay_enterDone {
+  display: block;
+  opacity: 1;
+}
+
+.modal__overlay_exit {
+  display: block;
+  opacity: 1;
+}
+
+.modal__overlay_exitActive {
+  display: block;
+  opacity: 0;
+  transition: opacity $animationTiming linear;
+}
+
+.modal {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  max-height: 480px;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  background-color: $bg-white;
+  margin: $margin-top 8px 25px;
+  padding: 16px;
+}
+
+.modal_enterActive {
+  opacity: 1;
+  margin-top: $margin-topActive;
+  transition: opacity $animationTiming linear,
+  margin-top $animationTiming ease-out;
+}
+
+.modal_enterDone {
+  opacity: 1;
+  margin-top: $margin-topActive;
+}
+
+.modal_exit {
+  opacity: 1;
+  margin-top: $margin-topActive;
+}
+
+.modal_exitActive {
+  transition: opacity $animationTiming linear;
+  opacity: 0;
+}
+
+.modal__header {
+  @include text-heading-h2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: $border-radius $border-radius 0 0;
+  transition: padding-left ease-out 100ms;
+}
+
+.modal__header_withBackButton {
+  padding-left: 44px;
+}
+
+.modal__header_success {
+  background-color: rgba(green, 0.05);
+}
+
+.modal__headerIcon {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.modal__headerLabel {
+  @include ellipsis;
+  flex-grow: 1;
+}
+
+.modal__headerIcon_success {
+  color: green;
+}
+
+.modal__headerLabel_success {
+  color: green;
+}
+
+.modal__closeButton {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  flex-shrink: 0;
+
+  i {
+    color: $text-placeholder;
+  }
+}
+
+.modal__backButton {
+  @include center-y();
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 10px;
+}
+
+.modal__content {
+  @include text-paragraph;
+  color: $text-secondary-heading-primary-paragraph;
+  background: $bg-grey;
+  border: 1px solid $stroke;
+  border-radius: $border-radius;
+  padding: 8px 16px;
+  overflow: auto;
+  margin: 22px 0 16px;
+  max-height: 336px;
+  height: 100%;
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__footerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.modal__footerButton {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.modal__footerButton_left {
+  margin-left: 0;
+  margin-right: 15px;
+}

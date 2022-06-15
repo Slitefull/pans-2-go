@@ -1,0 +1,21 @@
+.notification-element {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 10px;
+  width: 250px;
+  align-items: center;
+  border-radius: 5px;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 0 0 10px;
+
+  .text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.035em;
+  }
+
+  .kind {
+    padding: 0 10px 0 0;
+  }
+}

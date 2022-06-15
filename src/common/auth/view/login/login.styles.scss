@@ -1,0 +1,102 @@
+.login-form {
+  width: inherit;
+
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #333;
+    margin: 0 0 36px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+    &__element {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 15px;
+    }
+
+    .additional {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .forgot-password {
+        font-size: 12px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #333333;
+        outline: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__footer {
+    margin: 35px 0 0 0;
+
+    .text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 150%;
+      text-align: center;
+      color: #333;
+    }
+
+    .sign-up {
+      font-size: 14px;
+      line-height: 150%;
+      text-align: center;
+      color: #333333;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .submit-button {
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.035em;
+    margin: 36px 0 0;
+    min-height: 48px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .checkbox {
+    align-items: center;
+
+    &-label {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 150%;
+    }
+
+    &-input {
+      cursor: pointer;
+      border: 1px solid #e0e0e0;
+      box-sizing: border-box;
+      border-radius: 3px;
+      outline: none;
+      height: 18px;
+      width: 18px;
+
+      &:not(:checked) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -o-appearance: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.forms-custom-textarea {
+  &__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #333333;
+  }
+
+  .custom-textarea {
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  &__error {
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 3px;
+    color: #eb5757;
+  }
+}

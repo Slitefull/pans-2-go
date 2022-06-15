@@ -1,0 +1,29 @@
+@use "../../../ui-kit/styles/index" as *;
+
+.vehicles-radio-group {
+  margin-bottom: 36px;
+  width: 100%;
+
+  &__label {
+    color: #333333;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0 0 12px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px 0 0 0;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@use 'src/ui-kit/styles' as *;
+
+.rangeInput {
+  height: 22px;
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+}
+
+.rangeInput__value {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+}
+
+.rangeInput:focus {
+  outline: none;
+}
+
+.rangeInput::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #FABF2C;
+  border-radius: 0px;
+  border: 0px solid #000000;
+}
+
+.rangeInput::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 2px solid #FABF2C;
+  height: 14px;
+  width: 14px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+
+.rangeInput:focus::-webkit-slider-runnable-track {
+  background: #FABF2C;
+}
+
+.rangeInput::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #FABF2C;
+  border-radius: 0px;
+  border: 0px solid #000000;
+}
+
+.rangeInput::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 2px solid #FABF2C;
+  height: 11px;
+  width: 11px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.rangeInput::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.rangeInput::-ms-fill-lower {
+  background: #FABF2C;
+  border: 0px solid #000000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.rangeInput::-ms-fill-upper {
+  background: #FABF2C;
+  border: 0px solid #000000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.rangeInput::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 2px solid #FABF2C;
+  height: 14px;
+  width: 14px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.rangeInput:focus::-ms-fill-lower {
+  background: #FABF2C;
+}
+
+.rangeInput:focus::-ms-fill-upper {
+  background: #FABF2C;
+}

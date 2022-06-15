@@ -1,0 +1,63 @@
+@use "src/ui-kit/styles" as *;
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background: #E6F0FF;
+  padding: 60px 120px;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .logo {
+    margin: 0 0 40px;
+
+    @include mobile {
+      margin: 0 0 2px;
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  .link {
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration-line: underline;
+    color: #333333;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

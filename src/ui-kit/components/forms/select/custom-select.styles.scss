@@ -1,0 +1,15 @@
+.forms-custom-select {
+  &__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #333333;
+  }
+
+  &__error {
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 3px;
+    color: #eb5757;
+  }
+}

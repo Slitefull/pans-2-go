@@ -1,0 +1,165 @@
+@use 'src/ui-kit/styles' as *;
+
+$border-radius: 4px;
+$top: calc(100% + 30px);
+$topActive: calc(100% + 10px);
+$animationTiming: 50ms;
+
+.dropdown {
+  border-radius: $border-radius;
+  position: relative;
+  font-size: 15px;
+  color: $main-black;
+  text-align: left;
+
+  .select {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    cursor: pointer;
+
+    .arrow-icon {
+      @include center-y;
+      position: absolute;
+      font-size: 20px;
+      right: 5px;
+    }
+  }
+
+  .invalid {
+    border-radius: $border-radius;
+    border: 1px solid $main-red;
+    color: $main-red;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: $secondary-color;
+    width: 6px;
+  }
+
+  /* Track */
+  // ::-webkit-scrollbar-track {
+  //
+  // }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+  }
+}
+
+.dropdown__list {
+  padding: 0 0 5px;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dropdown__listScrollable {
+  max-height: 200px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.104506);
+  background: #ffffff;
+}
+
+.dropdown__option {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-background;
+  }
+}
+
+.dropdown__option_active {
+  font-weight: bold;
+  background-color: $secondary-background;
+}
+
+.dropdown__listWrapper {
+  width: 100%;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: $top;
+  left: 0;
+  z-index: 99;
+}
+
+.dropdown__listWrapper_enter {
+  display: block;
+  opacity: 0;
+  top: $top;
+}
+
+.dropdown__listWrapper_enterActive {
+  opacity: 1;
+  top: $topActive;
+  transition: opacity $animationTiming linear, top $animationTiming ease-out;
+}
+
+.dropdown__listWrapper_enterDone {
+  opacity: 1;
+  top: $topActive;
+  display: block;
+}
+
+.dropdown__listWrapper_exit {
+  opacity: 1;
+  top: $topActive;
+  display: block;
+}
+
+.dropdown__listWrapper_exitActive {
+  opacity: 0;
+  display: block;
+  transition: opacity $animationTiming linear;
+}
+
+
+.dropdown__listWrapperTop {
+  width: 100%;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  bottom: $top;
+  top: auto;
+  left: 0;
+  z-index: 99;
+}
+
+.dropdown__listWrapperTop_enter {
+  display: block;
+  opacity: 0;
+  bottom: $top;
+}
+
+.dropdown__listWrapperTop_enterActive {
+  opacity: 1;
+  bottom: $topActive;
+  transition: opacity $animationTiming linear, bottom $animationTiming ease-out;
+}
+
+.dropdown__listWrapperTop_enterDone {
+  opacity: 1;
+  bottom: $topActive;
+  display: block;
+}
+
+.dropdown__listWrapperTop_exit {
+  opacity: 1;
+  bottom: $topActive;
+  display: block;
+}
+
+.dropdown__listWrapperTop_exitActive {
+  opacity: 0;
+  display: block;
+  transition: opacity $animationTiming linear;
+}

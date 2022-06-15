@@ -1,0 +1,61 @@
+.invoices {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 30px;
+  width: 100%;
+
+  &__totalPrice {
+    color: #333;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 12px 0 0;
+
+    span {
+      padding-left: 12px;
+    }
+  }
+
+  h3 {
+    color: #333;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0 0 12px;
+  }
+
+  .for-table {
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 10px 10px 5px;
+  }
+  .scrollable-table .body {
+    .table-row {
+      background-color: #fff;
+      padding: 5px 15px;
+
+      &:nth-child(odd) {
+        background: #f8f8f8;
+      }
+    }
+  }
+
+  .header-group__element {
+    white-space: nowrap;
+  }
+
+  .table-row__content,
+  .header-group__element {
+    &:first-child {
+      width: 150px !important;
+    }
+  }
+}

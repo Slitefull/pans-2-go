@@ -1,0 +1,234 @@
+.info-tab {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+  }
+
+  .title-icon {
+    margin-right: 10px;
+  }
+
+  .car-location {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    margin: 10px 0;
+
+    .container-element {
+      height: 250px;
+    }
+
+    .map-element {
+      height: 100%;
+      border-radius: 12px;
+    }
+  }
+
+  &-form {
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+
+    .general-info {
+      display: grid;
+      grid-auto-flow: row dense;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr 1fr 1.1fr 0.9fr 1fr 1fr;
+      gap: 15px 30px;
+      grid-template-areas:
+    "title title title title title title"
+    "car-title car-title plate plate vin vin";
+      justify-items: stretch;
+      align-items: stretch;
+      margin: 0 0 30px;
+
+      .title {
+        grid-area: title;
+      }
+
+      .car-title {
+        grid-area: car-title;
+      }
+
+      .plate {
+        grid-area: plate;
+      }
+
+      .vin {
+        grid-area: vin;
+      }
+
+      .trim {
+        grid-area: trim;
+      }
+
+      .company {
+        grid-area: company;
+      }
+    }
+
+    .specification {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.1fr 0.9fr 1fr 1fr;
+      grid-auto-columns: 1fr;
+      gap: 15px 30px;
+      grid-auto-flow: row dense;
+      justify-items: stretch;
+      align-items: stretch;
+      grid-template-areas:
+    "title title title title title title"
+    "make make body-type body-type fuel-type fuel-type"
+    "model model model year year year"
+    "doors doors seats seats color color";
+      margin: 0 0 30px;
+
+      .title {
+        grid-area: title;
+      }
+
+      .make {
+        grid-area: make;
+      }
+
+      .body-type {
+        grid-area: body-type;
+      }
+
+      .fuel-type {
+        grid-area: fuel-type;
+      }
+
+      .model {
+        grid-area: model;
+      }
+
+      .year {
+        grid-area: year;
+      }
+
+      .doors {
+        grid-area: doors;
+      }
+
+      .seats {
+        grid-area: seats;
+      }
+
+      .color {
+        grid-area: color;
+      }
+
+    }
+
+    .insurance {
+      display: grid;
+      grid-auto-flow: row dense;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px 30px;
+      grid-template-areas:
+    "title title title"
+    "coverage policy-number exp-date"
+    "uploader uploader uploader";
+      justify-items: stretch;
+      align-items: stretch;
+      margin: 0 0 30px;
+
+      .title {
+        grid-area: title;
+      }
+
+      .coverage {
+        grid-area: coverage;
+      }
+
+      .policy-number {
+        grid-area: policy-number;
+      }
+
+      .exp-date {
+        grid-area: exp-date;
+      }
+
+      .uploader {
+        grid-area: uploader;
+      }
+    }
+
+    .registration {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-columns: 1fr;
+      gap: 15px 30px;
+      grid-auto-flow: row dense;
+      justify-items: stretch;
+      align-items: stretch;
+      grid-template-areas:
+    "title title"
+    "place exp-date"
+    "uploader uploader";
+      margin: 0 0 30px;
+
+      .title {
+        grid-area: title;
+      }
+
+      .exp-date {
+        grid-area: exp-date;
+      }
+
+      .uploader {
+        grid-area: uploader;
+      }
+
+      .place {
+        grid-area: place;
+      }
+    }
+
+    .service-inspection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-columns: 1fr;
+      gap: 15px 30px;
+      grid-auto-flow: row dense;
+      justify-items: stretch;
+      align-items: stretch;
+      grid-template-areas:
+    "title title"
+    "last-inspection-date exp-date"
+    "uploader uploader";
+
+      .title {
+        grid-area: title;
+      }
+
+      .exp-date {
+        grid-area: exp-date;
+      }
+
+      .uploader {
+        grid-area: uploader;
+      }
+
+      .info-status {
+        grid-area: status;
+      }
+
+      .last-inspection-date {
+        grid-area: last-inspection-date;
+      }
+    }
+  }
+}

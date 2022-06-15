@@ -1,0 +1,38 @@
+@use "src/ui-kit/styles" as *;
+
+.reservation-package {
+  cursor: pointer;
+  padding: 20px 25px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 22px;
+
+  &.active {
+    border: 1px solid #000000;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    background: #efefef;
+
+    @include mobile {
+      pointer-events: none;
+    }
+  }
+
+  &__hours {
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: #333333 !important;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 33px;
+    letter-spacing: 0.035em;
+    color: #339933 !important;
+  }
+}

@@ -1,0 +1,24 @@
+.autocomplete-area-mobile {
+  .link-arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #333333;
+    }
+  }
+
+  .custom-autocomplete {
+    padding: 16px;
+    background: #FFFFFF;
+    border-radius: 22px;
+  }
+
+  .autocomplete-save-button {
+    width: 100%;
+  }
+}

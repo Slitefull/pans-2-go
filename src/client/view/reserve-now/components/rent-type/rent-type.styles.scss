@@ -1,0 +1,91 @@
+@use "src/ui-kit/styles" as *;
+
+.rent-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 15px;
+  background: #FFFFFF;
+  border-radius: 22px;
+  height: 400px;
+  width: 250px;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include mobile {
+    border: 1px solid rgba(196, 196, 196, 0.38);
+    height: 250px;
+    width: 100%;
+  }
+
+  &.active {
+    border: 1px solid #000000;
+    transition: 0.5s;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #333333;
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.035em;
+      color: #333333;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: transparent;
+  }
+
+  &__starting-from {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #919191;
+
+    @include mobile {
+      font-size: 10px;
+    }
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #339933;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}

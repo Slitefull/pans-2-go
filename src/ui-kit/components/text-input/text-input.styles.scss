@@ -1,0 +1,172 @@
+@use 'src/ui-kit/styles' as *;
+
+$input-height: 40px;
+$font-size: 12px;
+$border-radius: $border-radius;
+
+.ui-text-input {
+  @include text-paragraph;
+  background: $bg-white;
+  border: 1px solid $stroke;
+  height: $input-height;
+  border-radius: $border-radius;
+  padding: 0 15px;
+  margin: 0;
+  outline: none;
+  width: inherit;
+
+  @include mobile {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+
+  &__label {
+    width: 100%;
+  }
+
+  &::placeholder {
+    color: $text-placeholder;
+    font-size: $font-size;
+
+    @include mobile {
+      font-size: 10px;
+    }
+  }
+
+  &--error {
+    border-color: $message-danger;
+    color: $message-danger;
+  }
+
+  &--success {
+    border-color: $message-success;
+  }
+
+  &--has-icon {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+    padding-left: 0;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+}
+
+.ui-text-input-box {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--start-icon {
+    .ui-text-input {
+      padding-left: 40px;
+    }
+
+    .icon {
+      left: 12px;
+    }
+  }
+
+  &--end-icon {
+    .ui-text-input {
+      padding-right: 50px;
+    }
+
+    .icon {
+      right: 16px;
+    }
+  }
+
+  &--two-icons {
+    .ui-text-input {
+      padding-left: 40px;
+      padding-right: 50px;
+    }
+
+    .icon {
+      &:first-of-type {
+        left: 12px;
+      }
+
+      &:last-of-type {
+        right: 16px;
+      }
+    }
+  }
+}
+
+.ui-text-input.ui-text-input__connector {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-width: 0;
+}
+
+.ui-text-input__button {
+  background-color: $secondary-background;
+  border: 1px solid $secondary-background;
+  border-left-width: 0;
+  height: $input-height;
+  font-size: $font-size;
+  padding: 0 25px;
+  color: $link-color;
+  font-family: $main-font;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  border-radius: 0 $border-radius $border-radius 0;
+  font-weight: 500;
+  outline: none;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 1px;
+    height: 30px;
+    background-color: $delimiter-color;
+  }
+}
+
+.ui-text-input__button--error {
+  border-color: $message-danger;
+}
+
+.ui-text-input__button--success {
+  border-color: $message-success;
+}
+
+.ui-text-input__helper {
+  @include text-paragraph-sm;
+  padding-top: 3px;
+}
+
+.ui-text-input__helper--error {
+  color: $message-danger;
+}
+
+.ui-text-input__helper--success {
+  color: $message-success;
+}
+
+.ui-text-input-icon {
+  cursor: text;
+  text-align: center;
+  line-height: $input-height;
+  width: $border-radius * 2;
+  font-family: "Material Icons";
+  height: $input-height;
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  background-color: $secondary-background;
+  border: 1px solid $secondary-background;
+  border-right: 0;
+}

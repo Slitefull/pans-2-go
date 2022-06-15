@@ -1,0 +1,134 @@
+@use "src/ui-kit/styles" as *;
+
+.reservation-past {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  margin: 0 0 20px;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  &:first-child {
+    margin: 10px 0;
+  }
+
+  .left-part {
+    display: flex;
+  }
+
+  .right-part {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    padding-left: 70px;
+
+    @include mobile {
+      padding-left: 0;
+      margin-top: 15px;
+    }
+
+    p {
+      color: #333;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      margin: 0 0 12px;
+    }
+
+    .price {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+
+  &__status {
+    border-radius: 100px;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 3px 15px;
+
+    &.red {
+      background: #cc0000;
+    }
+
+    &.green {
+      background: #339933;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background: #e0e0e0;
+    border-radius: 50%;
+
+    @include mobile {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px 10px 0;
+    }
+  }
+
+  .lock-unlock-button {
+    margin: 0 0 0 auto;
+    display: block;
+
+    @include mobile {
+      margin: 20px 0 0;
+      width: 100%;
+    }
+  }
+}
+
+.mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  width: 100%;
+
+  &__status {
+    border-radius: 100px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 5px 15px;
+
+    &.red {
+      background: #cc0000;
+    }
+
+    &.green {
+      background: #339933;
+    }
+  }
+}
+
+

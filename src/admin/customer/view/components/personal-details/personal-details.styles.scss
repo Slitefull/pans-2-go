@@ -1,0 +1,86 @@
+.personal-details-form {
+  width: 100%;
+
+  &__input {
+    width: 100%;
+  }
+
+  .name-container {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 10px;
+    grid-template-areas: "first-name last-name";
+    margin: 0 0 30px;
+
+    .first-name {
+      width: 100%;
+      grid-area: first-name;
+    }
+
+    .last-name {
+      width: 100%;
+      grid-area: last-name;
+    }
+  }
+
+  .contacts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px 10px;
+    grid-auto-flow: row dense;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 0 0 30px;
+    grid-template-areas:
+        "email email phone phone"
+        "emergency-contact-phone emergency-contact-phone whats-app-phone whats-app-phone"
+        "zip state address address";
+
+    .email {
+      width: 100%;
+      grid-area: email;
+    }
+
+    .phone {
+      width: 100%;
+      grid-area: phone;
+    }
+
+    .emergency-contact-phone {
+      width: 100%;
+      grid-area: emergency-contact-phone;
+    }
+
+    .whats-app-phone {
+      width: 100%;
+      grid-area: whats-app-phone;
+    }
+
+    .zip {
+      width: 100%;
+      grid-area: zip;
+    }
+
+    .state {
+      width: 100%;
+      grid-area: state;
+    }
+
+    .address {
+      width: 100%;
+      grid-area: address;
+    }
+  }
+
+  .my-notification-preferences {
+    display: flex;
+    flex-direction: column;
+
+    &__options {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

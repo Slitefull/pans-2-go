@@ -1,0 +1,25 @@
+@use "src/ui-kit/styles" as *;
+
+.my-reservations {
+  .new-reservation {
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 20px 0;
+    text-transform: capitalize;
+    width: fit-content;
+
+    @include mobile {
+      display: none;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}

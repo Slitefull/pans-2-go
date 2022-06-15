@@ -1,0 +1,14 @@
+@use "../../../../ui-kit/styles/index" as *;
+
+.state {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 100%;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}

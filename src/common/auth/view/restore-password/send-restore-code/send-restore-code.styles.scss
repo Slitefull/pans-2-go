@@ -1,0 +1,38 @@
+.restore-password {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+
+  &__text {
+    margin: 0 0 30px;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #919191;
+  }
+
+  .restore-password-form {
+    display: flex;
+    flex-direction: column;
+
+    &__footer {
+      margin: 35px 0 0 0;
+
+      .text {
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: #333333;
+      }
+
+      .back-login {
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: #333333;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

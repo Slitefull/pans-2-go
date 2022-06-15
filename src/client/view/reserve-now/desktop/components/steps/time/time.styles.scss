@@ -1,0 +1,31 @@
+.time-step-desktop {
+  .drop-off, .additional-requests {
+    margin: 20px 0 0 0;
+  }
+
+  .step-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin: 0 0 15px 0;
+  }
+
+  .reservation-datepicker-desktop__wrapper {
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: fit-content;
+
+    .reservation-datepicker-desktop {
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.035em;
+      color: #265DE3;
+      border-radius: 10px;
+      border: 1px solid #90909052;
+      padding: 5px 10px;
+    }
+  }
+}

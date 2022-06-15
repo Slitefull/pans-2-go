@@ -1,0 +1,32 @@
+.reservation-rule {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin: 0 0 10px;
+  height: 90px;
+  gap: 0 40px;
+
+  &__text {
+    font-size: 13px;
+    line-height: 19px;
+    text-align: left;
+    color: #333333;
+    max-width: 80%;
+  }
+
+  &__price {
+    color: #339933;
+    font-weight: 500;
+  }
+
+  &__checkbox {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+  }
+}
